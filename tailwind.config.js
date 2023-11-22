@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-  content: [],
+  content: ["./index.html"],
   theme: {
-    extend: {},
+    screens: {
+      '3xs': '370px',
+      '2xs': '410px',
+      'xs': '524px',
+      ...defaultTheme.screens,
+    },
+    extend: {
+      fontFamily: {
+        'sans': ['Poppins', 'system-ui', 'sans-serif']
+    }
+    },
   },
   plugins: [],
 }
