@@ -46,6 +46,10 @@ html {
         @apply pb-4;
         @apply max-w-8xl;
     }
+    nav.nav-bg{
+        @apply bg-stone-950;
+    }
+
     .nav-container{
         @apply my-8;
         @apply pb-4;

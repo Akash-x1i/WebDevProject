@@ -460,6 +460,11 @@ video {
   z-index: -1;
 }
 
+nav.nav-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 10 9 / var(--tw-bg-opacity));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -714,6 +719,10 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.pb-96 {
+  padding-bottom: 24rem;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -765,6 +774,12 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .duration-300 {
