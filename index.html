@@ -3,13 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Scripted</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="/navbar.js"></script>
   <link rel="stylesheet" href="dist/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    // Script for Nav Scroll effect
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $("nav");
+      $nav.toggleClass('nav-bg', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  // Script for Responsive Navbar
+  var navItems = document.getElementById("navItems");
+  var mobileNav = document.getElementById("mobileNav");
+  var hamburger = document.getElementById("hamburger");
+
+
+  function adjustNavbar() {
+    screenWidth = parseInt(window.innerWidth);
+    if (screenWidth < 970) {
+      navItems.style.display = "none";
+      hamburger.style.display = "flex";
+    }
+    else {
+      navItems.style.display = "flex";
+      hamburger.style.display = "none";
+    }
+  }
+
+  adjustNavbar();
+
+  window.addEventListener("resize", adjustNavbar);
+
+  hamburger.addEventListener("click", function () {
+    mobileNav.classList.toggle("left-[-70%]");
+    hamburger.classList.toggle("fa-bars");
+    hamburger.classList.toggle("fa-close");
+  })
+  </script>
 </head>
 <body class="pb-96">
   <!-- Navbar -->
