@@ -28,6 +28,9 @@ html {
     .pr {
         padding-right: var(--child-padding);
     }
+    .bg-img{
+        height: 92vh;
+    }
     .bg-img::before {
         content: "";
         position: absolute;
