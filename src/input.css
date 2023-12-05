@@ -43,6 +43,15 @@ html {
         width: 100%;
         z-index: -1;
     }
+    [class^='cori']{
+        margin-top: calc(8rem/-2);
+    }
+    [class^='cori-left']{
+        margin-left: -23px;
+    }
+    [class*='corner']{
+        transform: rotate(150deg);
+    }
     .w-container{
         @apply mx-auto;
         /* @apply my-8 ; */
