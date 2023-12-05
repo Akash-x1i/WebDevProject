@@ -448,7 +448,7 @@ video {
 }
 
 .bg-img{
-  height: 92vh;
+  height: 92dvh;
 }
 
 .bg-img::before {

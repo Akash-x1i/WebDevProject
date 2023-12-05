@@ -29,7 +29,7 @@ html {
         padding-right: var(--child-padding);
     }
     .bg-img{
-        height: 92vh;
+        height: 92dvh;
     }
     .bg-img::before {
         content: "";
