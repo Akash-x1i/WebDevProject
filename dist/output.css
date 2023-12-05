@@ -598,10 +598,6 @@ nav.nav-bg {
   top: 4rem;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -641,26 +637,6 @@ nav.nav-bg {
 
 .h-full {
   height: 100%;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-7 {
-  height: 1.75rem;
-}
-
-.h-72 {
-  height: 18rem;
-}
-
-.max-h-72 {
-  max-height: 18rem;
 }
 
 .max-h-40 {
@@ -748,34 +724,9 @@ nav.nav-bg {
   padding-right: 1rem;
 }
 
-.py-\[20\%\] {
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
-
 .py-\[10\%\] {
   padding-top: 10%;
   padding-bottom: 10%;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.py-\[5\] {
-  padding-top: 5;
-  padding-bottom: 5;
-}
-
-.py-\[5\%\] {
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 .pb-1 {
@@ -825,9 +776,9 @@ nav.nav-bg {
   letter-spacing: 0.05em;
 }
 
-.text-gray-200 {
+.text-gray-50 {
   --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
+  color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
 .text-teal-500 {
@@ -838,16 +789,6 @@ nav.nav-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
-}
-
-.text-gray-50 {
-  --tw-text-opacity: 1;
-  color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -888,10 +829,6 @@ nav.nav-bg {
 }
 
 @media (min-width: 370px) {
-  .\33xs\:max-h-40 {
-    max-height: 10rem;
-  }
-
   .\33xs\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -909,26 +846,6 @@ nav.nav-bg {
 
   .sm\:max-h-52 {
     max-height: 13rem;
-  }
-
-  .sm\:py-\[10\%\] {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-
-  .sm\:py-\[5\%\] {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-
-  .sm\:py-\[\] {
-    padding-top: ;
-    padding-bottom: ;
-  }
-
-  .sm\:py-\[32\] {
-    padding-top: 32;
-    padding-bottom: 32;
   }
 
   .sm\:py-\[32px\] {
@@ -950,18 +867,6 @@ nav.nav-bg {
 @media (min-width: 768px) {
   .md\:max-h-60 {
     max-height: 15rem;
-  }
-
-  .md\:max-h-72 {
-    max-height: 18rem;
-  }
-
-  .md\:max-h-6 {
-    max-height: 1.5rem;
-  }
-
-  .md\:max-h-64 {
-    max-height: 16rem;
   }
 
   .md\:text-5xl {
@@ -990,23 +895,7 @@ nav.nav-bg {
   }
 }
 
-@media (min-width: 370px) {
-  @media (min-width: 1280px) {
-    .\33xs\:first-letter\:xl\:max-h-72::first-letter {
-      max-height: 18rem;
-    }
-
-    .\33xs\:xl\:max-h-72 {
-      max-height: 18rem;
-    }
-  }
-}
-
 @media (min-width: 1280px) {
-  .xl\:max-h-72 {
-    max-height: 18rem;
-  }
-
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
