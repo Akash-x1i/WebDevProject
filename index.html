@@ -92,9 +92,22 @@ $(function () {
       <div class="mt-8 basis-80"><img src="./img/discover3.webp" alt=""><p class="p-4">Order Now</p></div>
     </div>
   </div>
+  <div id="parallax" class="parallax-container h-[50vh] md:h-screen bg-fixed">
+    <div class="parallax-content">
+    </div>
+  </div>
 
 </main>
 <script>
+  const parallax = document.getElementById("parallax");
+  window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  if (screenWidth > 1024) {
+    parallax.style.backgroundPositionY = offset * 0.7 - 100 + "px";
+    parallax.classList.remove("bg-fixed");
+  }
+});
+
   // Script for Responsive Navbar
   var navItems = document.getElementById("navItems");
   var mobileNav = document.getElementById("mobileNav");
