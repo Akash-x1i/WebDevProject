@@ -28,17 +28,29 @@ html {
     .pr {
         padding-right: var(--child-padding);
     }
+    .bg-img{
+        height: 92dvh;
+    }
     .bg-img::before {
         content: "";
         position: absolute;
         background: url("../img/home.jpg") no-repeat;
         background-size: cover;
         filter: brightness(50%);
-        height: 100%;
+        height: 100dvh;
         top: 0px;
         left: 0px;
         width: 100%;
         z-index: -1;
+    }
+    [class^='cori']{
+        margin-top: calc(8rem/-2);
+    }
+    [class^='cori-left']{
+        margin-left: -23px;
+    }
+    [class*='corner']{
+        transform: rotate(150deg);
     }
     .w-container{
         @apply mx-auto;
@@ -54,6 +66,13 @@ html {
         @apply my-8;
         @apply pb-4;
         @apply w-full;
+    }
+    .parallax-container{
+        background: url("../img/huge.webp") ;
+        background-position: center;
+        /* background-size: 100vw ; */
+        background-position-y: 35px;
+        width: 100%;
     }
 }
 
