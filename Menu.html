@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu: Tandoori Temptations</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/navbar.js"></script>
     <link rel="stylesheet" href="dist/Menu.css">
@@ -12,17 +12,17 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
       // Script for Nav Scroll effect
-//   $(function () {
-//       $(document).scroll(function () {
-//         var $nav = $("nav");
-//         $nav.toggleClass('nav-bg', $(this).scrollTop() > $nav.height());
-//       });
-//     });    
+      $(function () {
+          $(document).scroll(function () {
+            var $nav = $("nav");
+            $nav.toggleClass('nav-bg', $(this).scrollTop() > $nav.height()/4);
+          });
+        });    
     </script>
   </head>
-  <body class="pb-96">
+  <body class="pb-96 bg-img">
     <!-- Navbar -->
-    <nav class="sticky top-0 z-50 border-b bg-stone-950 transition-all duration-500 overflow-hidden">
+    <nav class="sticky top-0 z-50 border-b bg-transparent transition-all duration-500 overflow-hidden">
       <div class="px-12 max-w-7xl h-16 mx-auto text-white flex items-center justify-between">
         <div>
           <h1 class="lg:text-2xl text-xl uppercase tracking-wider cursor-pointer font-bold">Document</h1>
@@ -33,42 +33,48 @@
             <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
           </span>
           <span class="group">
-          <a href="./Menu.html">Menu</a>
-          <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
-        </span>
-        <span class="group">
-          Reservation
-          <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
-        </span>
-        <span class="group">
-          Gallery
-          <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
-        </span>
-        <span class="group">
-          About
-          <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
-        </span>
-        <span class="group">
-          Contact
-          <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
-        </span>
+            <a href="./Menu.html">Menu</a>
+            <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+          </span>
+          <span class="group">
+            <a href="./reservationpage.html">Reservation</a>
+            <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+          </span>
+          <span class="group">
+            <a href="./gallerypage.html">Gallery</a>
+            <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+          </span>
+          <span class="group">
+            <a href="#about">About</a>
+            <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+          </span>
+          <span class="group">
+            <a href="#contact">Contact</a>
+            <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+          </span>
+        </div>
+        <div id="hamburger" class="fa fa-bars flex items-center text-xl text-teal-500" style="display:none;"></div>
+        <div id="mobileNav"
+          class="fixed flex flex-col gap-8 pt-16 px-4 text-xl uppercase bg-teal-500 h-full inset-0 top-16 w-[70%] left-[-70%] ease-in-out duration-500 cursor-pointer">
+          <span>Home</span>
+          <span><a href="./Menu.html">Menu</a></span>
+          <span><a href="./reservationpage.html">Reservation</a></span>
+          <span><a href="./gallerypage.html">Gallery</a></span>
+          <span><a href="#about">About</a></span>
+          <span><a href="#contact">Contact</a></span>
+        </div>
       </div>
-      <div id="hamburger" class="fa fa-bars flex items-center text-xl text-teal-500" style="display:none;"></div>
-      <div id="mobileNav"
-        class="fixed flex flex-col gap-8 pt-16 px-4 text-xl uppercase bg-teal-500 h-full inset-0 top-16 w-[70%] left-[-70%] ease-in-out duration-500 cursor-pointer">
-        <span>Home</span>
-        <span><a href="./Menu.html">Menu</a></span>
-        <span>Reservation</span>
-        <span>Gallery</span>
-        <span>About</span>
-        <span>Contact</span>
-      </div>
-    </div>
-</nav>
+  </nav>
   <main>
     <div class="w-full">
-        <h2 class="mt-4 underline p-10 px-12 font-semibold text-center text-4xl">Menu</h2>
-        <div class="px-8 pb-8 mx-auto flex flex-row justify-around flex-wrap max-w-7xl text-xl text-center font-medium">
+      <div>
+        <div class="heading bg-black">
+          <h1>Tandoori Temptation</h1>
+          <h3>&mdash; Menu &mdash;</h3>
+        </div>
+      </div>
+        <!-- <h2 class="mt-4 underline p-10 px-12 font-semibold text-center text-4xl">Menu</h2> -->
+        <div class="p-8 pb-16 mx-auto bg-white bg-opacity-70 flex flex-row justify-around flex-wrap max-w-7xl text-xl text-center font-medium">
           <div class="mt-8 mx-2 w-96 hover:scale-110 ease-in-out transition-transform duration-300 hover:shadow-xl"><img class="h-52 w-full object-cover object-center" src="./img/discover1.webp" alt="">
             <div class="font-normal text-justify border border-stone-950">
                 <div class="font-medium bg-slate-100 p-4 flex justify-between">
