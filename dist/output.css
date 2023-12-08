@@ -610,6 +610,15 @@ nav.nav-bg {
   top: 4rem;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -621,6 +630,10 @@ nav.nav-bg {
 
 .mt-36 {
   margin-top: 9rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-8 {
@@ -651,6 +664,10 @@ nav.nav-bg {
   height: 8rem;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
 .h-\[50vh\] {
   height: 50vh;
 }
@@ -665,6 +682,10 @@ nav.nav-bg {
 
 .w-0 {
   width: 0px;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .w-\[70\%\] {
@@ -731,6 +752,10 @@ nav.nav-bg {
   overflow: hidden;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-y {
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -738,6 +763,21 @@ nav.nav-bg {
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-stone-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(12 10 9 / var(--tw-border-opacity));
+}
+
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-stone-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 10 9 / var(--tw-bg-opacity));
 }
 
 .bg-teal-500 {
@@ -756,6 +796,20 @@ nav.nav-bg {
 
 .bg-fixed {
   background-attachment: fixed;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-4 {
@@ -806,9 +860,18 @@ nav.nav-bg {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-lg {
@@ -827,6 +890,14 @@ nav.nav-bg {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -852,8 +923,18 @@ nav.nav-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -870,6 +951,12 @@ nav.nav-bg {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-gray-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -877,6 +964,12 @@ nav.nav-bg {
 
 .hover\:bg-opacity-40:hover {
   --tw-bg-opacity: 0.4;
+}
+
+.hover\:shadow-xl:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:transition-colors:hover {
