@@ -4,16 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../dist/output.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  
+  <link rel="stylesheet" href="../dist/gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
-    .Galley{
-      padding: 0 10px 30px 10px;
-      display: grid;
-      grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
-      
-    }
     .heading{
       /* background-color:  rgb(73, 73, 126);; */
       color: white;
@@ -78,14 +74,14 @@
     </style>
     </head>
     <body>
-      <nav class="sticky top-0 border-b nav-bg overflow-hidden">
+      <nav class="sticky z-50 top-0 border-b bg-stone-950 transition-all duration-500 overflow-hidden">
         <div class="px-12 max-w-7xl h-16 mx-auto text-white flex items-center justify-between">
           <div>
-            <h1 class="lg:text-2xl text-xl uppercase tracking-wider cursor-pointer font-bold">Document</h1>
+            <img src="./img/logo-rec.png" class="h-40" alt="">
           </div>
           <div class="flex lg:gap-8 gap-6 uppercase tracking-wider cursor-pointer text-lg items-center" id="navItems">
             <span class="group">
-              Home
+              <a href="./index.html">Home</a>
               <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
             </span>
             <span class="group">
@@ -93,35 +89,35 @@
               <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
             </span>
             <span class="group">
-              Reservation
+              <a href="./reservationpage.html">Reservation</a>
               <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
             </span>
             <span class="group">
-              Gallery
+              <a href="./gallerypage.html">Gallery</a>
               <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
             </span>
             <span class="group">
-              About
+              <a href="./index.html#about">About</a>
               <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
             </span>
             <span class="group">
-              Contact
+              <a href="./index.html#contact">Contact</a>
               <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
             </span>
           </div>
           <div id="hamburger" class="fa fa-bars flex items-center text-xl text-teal-500" style="display:none;"></div>
           <div id="mobileNav"
             class="fixed flex flex-col gap-8 pt-16 px-4 text-xl uppercase bg-teal-500 h-full inset-0 top-16 w-[70%] left-[-70%] ease-in-out duration-500 cursor-pointer">
-            <span>Home</span>
+            <span><a href="./index.html">Home</a></span>
             <span><a href="./Menu.html">Menu</a></span>
-            <span>Reservation</span>
-            <span>Gallery</span>
-            <span>About</span>
-            <span>Contact</span>
+            <span><a href="./reservationpage.html">Reservation</a></span>
+            <span><a href="./gallerypage.html">Gallery</a></span>
+            <span><a href="./index.html#about">About</a></span>
+            <span><a href="./index.html#contact">Contact</a></span>
           </div>
         </div>
     </nav>
-      <div class="Gallery">
+    <div class="Gallery">
         <div class="heading bg-black">
             <h1>Tandoori Temptation</h1>
             <h3>&mdash; GALLERY &mdash;</h3>
@@ -193,5 +189,55 @@
         <img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141351.jpg?size=626&ext=jpg&ga=GA1.1.982888541.1701859829&semt=ais" style="width:100%">
       </div>
     </div>
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+        <!-- Logo -->
+        <div class="mb-4 md:mb-0">
+          <img src="./img/Logo.png" alt="Tandoori Temptations" class="h-20">
+        </div>
+        <!-- Navigation Links -->
+        <div class="flex flex-wrap justify-center text-center md:justify-end space-x-6">
+          <a href="./index.html">Home</a>
+          <a href="./Menu.html">Menu</a>
+          <a href="./reservationpage.html">Reservation</a>
+          <a href="./gallerypage.html">Gallery</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <p>&copy; 2023 Tandoori Temptations. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      // Script for Responsive Navbar
+  var navItems = document.getElementById("navItems");
+  var mobileNav = document.getElementById("mobileNav");
+  var hamburger = document.getElementById("hamburger");
+
+
+  function adjustNavbar() {
+    screenWidth = parseInt(window.innerWidth);
+    if (screenWidth < 970) {
+      navItems.style.display = "none";
+      hamburger.style.display = "flex";
+    }
+    else {
+      navItems.style.display = "flex";
+      hamburger.style.display = "none";
+    }
+  }
+
+  adjustNavbar();
+
+  window.addEventListener("resize", adjustNavbar);
+
+  hamburger.addEventListener("click", function () {
+    mobileNav.classList.toggle("left-[-70%]");
+    hamburger.classList.toggle("fa-bars");
+    hamburger.classList.toggle("fa-close");
+  })
+    </script>
+    
 </body>
 </html>
