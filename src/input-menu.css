@@ -31,10 +31,6 @@
         font-size: 30px;
         letter-spacing: 5px;
       }
-      p{
-        @apply bg-gray-50;
-        height: 8rem;
-      }
 }
 @layer components {
 }
