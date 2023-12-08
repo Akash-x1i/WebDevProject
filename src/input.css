@@ -74,6 +74,11 @@ html {
         background-position-y: 35px;
         width: 100%;
     }
+    .bg-about{
+        background: url(../img/tandoor.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 @layer components {

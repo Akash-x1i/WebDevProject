@@ -440,6 +440,13 @@ video {
   display: none;
 }
 
+.test {
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+}
+
 .px {
   padding-inline: var(--x-body-padding);
 }
@@ -486,49 +493,10 @@ nav.nav-bg {
   width: 100%;
 }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 999px;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
+.bg-about{
+  background: url(../img/tandoor.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 *, ::before, ::after {
@@ -685,16 +653,8 @@ nav.nav-bg {
   margin-top: 9rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
 }
 
 .block {
@@ -741,10 +701,6 @@ nav.nav-bg {
   height: 100%;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .max-h-40 {
   max-height: 10rem;
 }
@@ -759,10 +715,6 @@ nav.nav-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .max-w-4xl {
@@ -904,10 +856,6 @@ nav.nav-bg {
   background-attachment: fixed;
 }
 
-.p-16 {
-  padding: 4rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -915,6 +863,11 @@ nav.nav-bg {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-4 {
@@ -930,6 +883,11 @@ nav.nav-bg {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .py-2 {
@@ -1022,11 +980,6 @@ nav.nav-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1065,11 +1018,6 @@ nav.nav-bg {
 
 .hover\:bg-opacity-40:hover {
   --tw-bg-opacity: 0.4;
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:transition-colors:hover {
@@ -1142,10 +1090,6 @@ nav.nav-bg {
     margin-bottom: 0px;
   }
 
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
   .md\:h-screen {
     height: 100vh;
   }
@@ -1184,6 +1128,11 @@ nav.nav-bg {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
