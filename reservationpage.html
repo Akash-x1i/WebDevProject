@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Reservation</title>
-    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./dist/reservation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background: url(./img/tandoor.jpg) no-repeat ;
+            background-size: cover;
         }
 
         form {
-            width: 70%;
-            max-width: 400px;
+            width: 80%;
+            max-width: 800px;
             margin: 20px auto;
-            background-color: white;
-            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -34,16 +35,16 @@
         }
 
         input, textarea {
-            width: calc(100% - 16px);
+            width: 100%;
             padding: 8px;
-            margin-bottom: 16px;
+            margin-bottom: 1.5rem;
             border: 1px solid #ced4da;
             border-radius: 4px;
         }
 
         input[type="date"],
         input[type="time"] {
-            width: calc(48% - 8px);
+            width: 100%;
             display: inline-block;
             margin-right: 8px;
         }
@@ -71,16 +72,10 @@
             background-color: #0056b3;
         }
 
-    .Galley{
-      padding: 0 10px 30px 10px;
-      display: grid;
-      grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
-      
-    }
     .heading{
       /* background-color:  rgb(73, 73, 126);; */
       color: white;
-      margin-bottom: 30px 0;
+      padding: 20px;
       grid-column: 1/-1;
       text-align: center;
     }
@@ -139,6 +134,15 @@
       }
     }
     </style>
+    <script>
+      // Script for Nav Scroll effect
+      $(function () {
+          $(document).scroll(function () {
+            var $nav = $("nav");
+            $nav.toggleClass('nav-bg', $(this).scrollTop() > $nav.height());
+          });
+        });
+    </script>
 </head>
 <body>
   <header>
@@ -187,7 +191,7 @@
       </nav>
     </header>
 <main>
-  <div class="Reservation">
+  <div class="Gallery">
     <div class="heading bg-black">
       <h1>Tandoori Temptation</h1>
       <h3>&mdash; RESERVATION &mdash;</h3>
@@ -195,37 +199,39 @@
   </div>
   
   <form id="reservationForm" enctype="multipart/form-data">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="contact">Contact Number:</label>
-    <input type="number" id="contact" name="contact" required>
-    
-    <label for="seats">Number of Seats:</label>
-    <input type="number" id="seats" name="seats" min="1" required>
-    
-    <div style="display: flex; justify-content: space-between;">
-      <div style="flex: 48%;">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-              </div>
-              <div style="flex: 48%;">
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time" required>
-              </div>
-            </div>
-            
-            <label for="inquiry">Inquiry Message:</label>
-            <textarea id="inquiry" name="inquiry" rows="4"></textarea>
-            
-            <label for="documents">Upload Documents:</label>
-            <input type="file" id="documents" name="documents">
-            
-            <input type="submit" value="Make Reservation">
-          </form>
+    <div class="mx-auto max-w-xl">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="contact">Contact Number:</label>
+      <input type="number" id="contact" name="contact" required>
+      
+      <label for="seats">Number of Seats:</label>
+      <input type="number" id="seats" name="seats" min="1" required>
+      
+      <div style="display: flex; justify-content: space-between;">
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+      </div>
+      
+      <label for="inquiry">Inquiry Message:</label>
+      <textarea id="inquiry" name="inquiry" rows="4"></textarea>
+      
+      <label for="documents">Upload Documents:</label>
+      <input type="file" id="documents" name="documents">
+      
+      <input type="submit" value="Make Reservation">
+    </form>
+  </div>
           
           <div id="contactDisplay"></div>
           
