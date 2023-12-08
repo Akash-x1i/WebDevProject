@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-  content: ["./index.html", "./Menu.html"],
+  content: ["./index.html"],
   theme: {
     screens: {
       '3xs': '370px',
