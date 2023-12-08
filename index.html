@@ -22,9 +22,9 @@ $(function () {
   
   </script>
 </head>
-<body class="pb-96">
+<body>
   <!-- Navbar -->
-  <nav class="sticky top-0 border-b bg-transparent transition-all duration-500 overflow-hidden">
+  <nav class="sticky z-50 top-0 border-b bg-transparent transition-all duration-500 overflow-hidden">
     <div class="px-12 max-w-7xl h-16 mx-auto text-white flex items-center justify-between">
       <div>
         <img src="./img/logo-rec.png" class="h-40" alt="">
@@ -75,10 +75,10 @@ $(function () {
   <div class="py-[10%] sm:py-[32px] px-12 max-w-7xl mx-auto bg-img text-white text-center">
     <img class="max-h-40 sm:max-h-52 md:max-h-60 lg:max-h-72 mx-auto" src="./img/Logo.png" alt="Logo">
     <!-- <p class="pt-1 3xs:px-10 text-3xl sm:text-4xl md:text-5xl xl:text-6xl block">Welcome <span class="block sm:inline">to</span> Tandoori Temptations</p> -->
-    <p class="text-lg lg:text-xl mt-8 text-gray-50 text-center">Savor the rich tapestry of spices and flavors that define Indian cuisine. At Tandoori Temptations, we invite you on a culinary journey steeped in tradition, where every bite is a symphony of tantalizing tastes.</p>
+    <p class="text-xl mt-8 text-gray-50 text-center">Savor the rich tapestry of spices and flavors that define Indian cuisine. At Tandoori Temptations, we invite you on a culinary journey steeped in tradition, where every bite is a symphony of tantalizing tastes.</p>
     <button class="mx-auto mt-36 sm:mt-20 pb-1 px-4 cursor-pointer text-xl sm:text-2xl border-y hover:bg-gray-800 hover:bg-opacity-40 hover:transition-colors ease-in-out duration-300">Open Menu</button>
   </div>
-  <img class="cori-left-corner h-32" src="/img/greens.png" alt="coriander">
+  <img class="cori-left-corner z-40 h-32" src="/img/greens.png" alt="coriander">
   <div class="w-full">
     <h2 class="-mt-10 px-12 font-medium text-center text-3xl">Discover Tandoori Temptations</h2>
     <div class="px-8 pb-8 mx-auto flex flex-row justify-around flex-wrap max-w-7xl text-xl text-center font-medium">
@@ -91,7 +91,15 @@ $(function () {
     <div class="parallax-content">
     </div>
   </div>
-
+  <div class="flex flex-col my-10 sm:flex-row content-between w-full">
+    <div style="flex: 50%;"><img src="./img/tandoor.jpg" alt=""></div>
+    <div class="p-16 text-xl flex items-center" style="flex: 50%;">
+      <div>
+        <h1 class="text-3xl py-8">About Us</h1>
+        <p>Established in 2023, Tandoori Temptations was born from a deep-rooted love for Indian flavors and a desire to create a dining experience that captures the essence of India's diverse culinary landscape. With a team of dedicated chefs steeped in tradition and armed with innovation, we embarked on a quest to offer a tantalizing array of dishes that represent the cultural tapestry of India.</p>
+      </div>
+    </div>
+  </div>
 </main>
 <script>
   const parallax = document.getElementById("parallax");
