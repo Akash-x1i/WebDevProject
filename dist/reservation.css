@@ -1,3 +1,9 @@
+html {
+  --x-body-padding: 2.5rem;
+  --child-padding: 1rem;
+  --tx-brightness: 100%;
+}
+
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
@@ -434,6 +440,18 @@ video {
   display: none;
 }
 
+[class^='cori']{
+  margin-top: calc(8rem/-2);
+}
+
+[class^='cori-left']{
+  margin-left: -23px;
+}
+
+[class*='corner']{
+  transform: rotate(150deg);
+}
+
 nav.nav-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(12 10 9 / var(--tw-bg-opacity));
@@ -563,9 +581,21 @@ nav.nav-bg {
   top: 4rem;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -592,6 +622,14 @@ nav.nav-bg {
   height: 100%;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -606,6 +644,10 @@ nav.nav-bg {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .cursor-pointer {
@@ -628,6 +670,10 @@ nav.nav-bg {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -638,6 +684,12 @@ nav.nav-bg {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -667,6 +719,11 @@ nav.nav-bg {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -681,8 +738,17 @@ nav.nav-bg {
   padding-right: 1rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-lg {
@@ -735,9 +801,35 @@ nav.nav-bg {
   width: 100%;
 }
 
+@media (min-width: 640px) {
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:text-2xl {
