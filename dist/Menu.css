@@ -445,7 +445,6 @@ nav.nav-bg {
 }
 
 .heading{
-  /* background-color:  rgb(73, 73, 126);; */
   color: white;
   padding: 20px;
   grid-column: 1/-1;
@@ -607,10 +606,6 @@ nav.nav-bg {
   margin-bottom: 1rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -655,10 +650,6 @@ nav.nav-bg {
   width: 0px;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-\[70\%\] {
   width: 70%;
 }
@@ -673,6 +664,10 @@ nav.nav-bg {
 
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .cursor-pointer {
@@ -794,10 +789,6 @@ nav.nav-bg {
      object-position: center;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -816,18 +807,9 @@ nav.nav-bg {
   padding-right: 1rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
 }
 
 .pb-8 {
@@ -838,17 +820,16 @@ nav.nav-bg {
   padding-top: 4rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-justify {
   text-align: justify;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-lg {
@@ -867,10 +848,6 @@ nav.nav-bg {
 
 .font-normal {
   font-weight: 400;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .uppercase {
@@ -894,10 +871,6 @@ nav.nav-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 .transition-all {
